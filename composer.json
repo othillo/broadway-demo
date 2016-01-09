@@ -26,7 +26,6 @@
         "symfony/framework-bundle": "~2.3",
         "symfony/yaml": "~2.3",
         "elasticsearch/elasticsearch": "~1.0",
-        "doctrine/mongodb": "~1.1",
         "symfony/finder": "~2.3",
         "symfony/process": "^2.6"
     },
