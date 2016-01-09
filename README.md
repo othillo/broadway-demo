@@ -9,20 +9,6 @@ The example is taken from the [Practical Event Sourcing][practical-eventsourcing
 
 ## Installation
 
-### Vagrant
-
-```sh
-vagrant up
-```
-
-Vagrant will provision the machine (using ansible).
-
-The box is then available at `192.168.42.100`, the vhost is configured with domain `broadway.local`.
-
-If you don't have ansible installed, you will have to run `composer install` yourself. And run `app/console broadway:event-store:schema:init` to initialize the database.
-
-### Docker Compose
-
 ```sh
 docker-compose up -d
 ```
