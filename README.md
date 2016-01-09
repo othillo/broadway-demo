@@ -10,14 +10,12 @@ The example is taken from the [Practical Event Sourcing][practical-eventsourcing
 ## Installation
 
 ```sh
-vagrant up
+docker-compose up -d
 ```
 
-Vagrant will provision the machine (using ansible).
+Docker-compose will set up the containers needed to run this demo.
 
-The box is then available at `192.168.42.100`, the vhost is configured with domain `broadway.local`.
-
-If you don't have ansible installed, you will have to run `composer install` yourself. And run `app/console broadway:event-store:schema:init` to initialize the database.
+The app will be available at http://localhost:8000 as configured in `docker-compose.yml`.
 
 ## Running the demo
 
@@ -33,11 +31,10 @@ This demo doesn't have a GUI, only an API with the following endpoints:
 
 ## Running the tests
 
-Login to your vagrant box to run the tests. By default we exclude functional tests, by providing `--exclude-group=none` you can run the functional tests as well.
+By default we exclude functional tests, by providing `--exclude-group=none` you can run the functional tests as well.
 
 ```sh
-cd /vagrant
-phpunit --exclude-group=none
+docker-compose run app vendor/bin/phpunit --exclude-group=none
 ```
 
 ## Code structure
