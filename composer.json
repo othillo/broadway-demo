@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-0": {
-            "": "src/"
+            "": ["src/", "test/"]
         }
     },
     "autoload-dev": {
@@ -43,6 +43,6 @@
     "prefer-stable": true,
     "require-dev": {
         "instaclick/base-test-bundle": "~0.5",
-        "phpunit/phpunit": "^4.5"
+        "phpunit/phpunit": "^5.5"
     }
 }
