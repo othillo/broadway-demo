@@ -9,16 +9,6 @@ The example is taken from the [Practical Event Sourcing][practical-eventsourcing
 
 ## Installation
 
-### Vagrant
-
-```sh
-docker-compose up -d
-```
-
-Docker-compose will set up the containers needed to run this demo.
-
-The app will be available at http://localhost:8000 as configured in `docker-compose.yml`.
-
 ### Docker Compose
 
 ```sh
