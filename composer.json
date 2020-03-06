@@ -30,7 +30,8 @@
         "broadway/broadway-bundle": "^0.4",
         "broadway/event-store-dbal": "^0.3",
         "doctrine/doctrine-bundle": "^1.8",
-        "qandidate/stack-request-id": "^2.0"
+        "qandidate/stack-request-id": "^2.0",
+        "broadway/uuid-generator": "^1.0"
     },
     "autoload": {
         "psr-4": {
